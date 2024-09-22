@@ -8,11 +8,12 @@
 </head>
 <body>
     <p>For only young and adults</p>
+    <label for="">How old are you?</label><br>
     <input id="age" type="number" min="1" max="12" required>
-    <button onclick="myAge()">I'M</button>
+    <button onclick="myAge()">I'm young🤣</button>
     <p id="p1"></p>
     <script>
-        function myAge() {
+        function myAge(){
             var x = document.getElementById("age");
             if (!x.checkValidity()) {
                 document.getElementById("p1").innerHTML = x.validationMessage;
