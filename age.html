@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>little angels</title>
+</head>
+<body>
+    <p>For only young and adults</p>
+    <input id="age" type="number" min="1" max="12" required>
+    <button onclick="myAge()">I'M</button>
+    <p id="p1"></p>
+    <script>
+        function myAge() {
+            var x = document.getElementById("age");
+            if (!x.checkValidity()) {
+                document.getElementById("p1").innerHTML = x.validationMessage;
+            }
+            else {
+                document.getElementById("p1").innerHTML = "yeah you are still young🤣";
+            }
+        }
+    </script>
+</body>
+
+</html>
